@@ -6,13 +6,6 @@ using UnityEngine;
 [CreateAssetMenu(menuName = "SO/Requirement/NeedToUnlockSkills")]
 public class NeedToUnlockSkillsSO : ScriptableObject, Requirement
 {
-    [Serializable]
-    public class NodeIndex
-    {
-        public int rowIndex;
-        public int nodeIndex;
-    }
-
     public List<NodeIndex> nodeIndices = new List<NodeIndex>();
 
     bool Requirement.IsGood(List<Row> rows)

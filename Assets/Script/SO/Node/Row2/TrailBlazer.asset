@@ -12,5 +12,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 91ba76ebb82efef4faa8b1d16446feb6, type: 3}
   m_Name: TrailBlazer
   m_EditorClassIdentifier: 
-  nodeName: Trail Blazer
+  NodeName: Trail Blazer
   MaxLevel: 3

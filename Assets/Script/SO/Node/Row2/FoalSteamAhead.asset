@@ -12,5 +12,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 91ba76ebb82efef4faa8b1d16446feb6, type: 3}
   m_Name: FoalSteamAhead
   m_EditorClassIdentifier: 
-  nodeName: Foal Steam Ahead
+  NodeName: Foal Steam A head
   MaxLevel: 3

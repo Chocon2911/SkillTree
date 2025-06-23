@@ -5,6 +5,6 @@ using UnityEngine;
 [CreateAssetMenu(menuName = "SO/Node")]
 public class NodeSO : ScriptableObject
 {
-    public string nodeName;
+    public string NodeName;
     public int MaxLevel;
 }
