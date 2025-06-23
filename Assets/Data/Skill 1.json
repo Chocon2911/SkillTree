@@ -1,0 +1,256 @@
+{
+  "$id": "1",
+  "dataPath": "Data",
+  "Rows": [
+    {
+      "$id": "2",
+      "requirements": [],
+      "nodes": [
+        {
+          "$id": "3",
+          "rowIndex": 0,
+          "currLevel": 1,
+          "so": {
+            "__scriptableObjectPath": "Assets/Script/SO/Node/Row1/Breeder.asset"
+          },
+          "requirement": []
+        },
+        {
+          "$id": "4",
+          "rowIndex": 0,
+          "currLevel": 2,
+          "so": {
+            "__scriptableObjectPath": "Assets/Script/SO/Node/Row1/HomeSteader.asset"
+          },
+          "requirement": []
+        },
+        {
+          "$id": "5",
+          "rowIndex": 0,
+          "currLevel": 1,
+          "so": {
+            "__scriptableObjectPath": "Assets/Script/SO/Node/Row1/Trainer.asset"
+          },
+          "requirement": []
+        }
+      ]
+    },
+    {
+      "$id": "6",
+      "requirements": [
+        {
+          "$id": "7",
+          "Value": {
+            "$id": "8",
+            "$type": "EnoughUnlockedSkillsSO, Assembly-CSharp",
+            "requiredAmount": 3,
+            "rowIndex": 0,
+            "name": "Condition1",
+            "hideFlags": 0
+          },
+          "UnderlyingValue": {
+            "$ref": "8"
+          }
+        }
+      ],
+      "nodes": [
+        {
+          "$id": "9",
+          "rowIndex": 1,
+          "currLevel": 0,
+          "so": {
+            "__scriptableObjectPath": "Assets/Script/SO/Node/Row2/BeginnerFriendly.asset"
+          },
+          "requirement": []
+        },
+        {
+          "$id": "10",
+          "rowIndex": 1,
+          "currLevel": 0,
+          "so": {
+            "__scriptableObjectPath": "Assets/Script/SO/Node/Row2/EasyKeeper.asset"
+          },
+          "requirement": []
+        },
+        {
+          "$id": "11",
+          "rowIndex": 1,
+          "currLevel": 0,
+          "so": {
+            "__scriptableObjectPath": "Assets/Script/SO/Node/Row2/FoalNany.asset"
+          },
+          "requirement": []
+        },
+        {
+          "$id": "12",
+          "rowIndex": 1,
+          "currLevel": 0,
+          "so": {
+            "__scriptableObjectPath": "Assets/Script/SO/Node/Row2/FoalSteamAhead.asset"
+          },
+          "requirement": []
+        },
+        {
+          "$id": "13",
+          "rowIndex": 1,
+          "currLevel": 3,
+          "so": {
+            "__scriptableObjectPath": "Assets/Script/SO/Node/Row2/InYourPocket.asset"
+          },
+          "requirement": []
+        },
+        {
+          "$id": "14",
+          "rowIndex": 1,
+          "currLevel": 3,
+          "so": {
+            "__scriptableObjectPath": "Assets/Script/SO/Node/Row2/Motherly.asset"
+          },
+          "requirement": []
+        },
+        {
+          "$id": "15",
+          "rowIndex": 1,
+          "currLevel": 3,
+          "so": {
+            "__scriptableObjectPath": "Assets/Script/SO/Node/Row2/NaturalHorsemanship.asset"
+          },
+          "requirement": []
+        },
+        {
+          "$id": "16",
+          "rowIndex": 1,
+          "currLevel": 3,
+          "so": {
+            "__scriptableObjectPath": "Assets/Script/SO/Node/Row2/Resourceful Grazer.asset"
+          },
+          "requirement": []
+        },
+        {
+          "$id": "17",
+          "rowIndex": 1,
+          "currLevel": 3,
+          "so": {
+            "__scriptableObjectPath": "Assets/Script/SO/Node/Row2/TopMoma.asset"
+          },
+          "requirement": []
+        },
+        {
+          "$id": "18",
+          "rowIndex": 1,
+          "currLevel": 0,
+          "so": {
+            "__scriptableObjectPath": "Assets/Script/SO/Node/Row2/TrailBlazer.asset"
+          },
+          "requirement": []
+        },
+        {
+          "$id": "19",
+          "rowIndex": 1,
+          "currLevel": 0,
+          "so": {
+            "__scriptableObjectPath": "Assets/Script/SO/Node/Row2/TrainersTreat.asset"
+          },
+          "requirement": []
+        },
+        {
+          "$id": "20",
+          "rowIndex": 1,
+          "currLevel": 0,
+          "so": {
+            "__scriptableObjectPath": "Assets/Script/SO/Node/Row2/WetHooves.asset"
+          },
+          "requirement": []
+        }
+      ]
+    },
+    {
+      "$id": "21",
+      "requirements": [
+        {
+          "$id": "22",
+          "Value": {
+            "$id": "23",
+            "$type": "EnoughPointsInRowSO, Assembly-CSharp",
+            "requiredPoints": 15,
+            "checkedRowIndex": 1,
+            "name": "Condition2",
+            "hideFlags": 0
+          },
+          "UnderlyingValue": {
+            "$ref": "23"
+          }
+        }
+      ],
+      "nodes": [
+        {
+          "$id": "24",
+          "rowIndex": 2,
+          "currLevel": 1,
+          "so": {
+            "__scriptableObjectPath": "Assets/Script/SO/Node/Row3/AgilityTrainer.asset"
+          },
+          "requirement": []
+        },
+        {
+          "$id": "25",
+          "rowIndex": 2,
+          "currLevel": 1,
+          "so": {
+            "__scriptableObjectPath": "Assets/Script/SO/Node/Row3/Horsemanship.asset"
+          },
+          "requirement": []
+        },
+        {
+          "$id": "26",
+          "rowIndex": 2,
+          "currLevel": 1,
+          "so": {
+            "__scriptableObjectPath": "Assets/Script/SO/Node/Row3/NaturallyHealthy.asset"
+          },
+          "requirement": []
+        },
+        {
+          "$id": "27",
+          "rowIndex": 2,
+          "currLevel": 0,
+          "so": {
+            "__scriptableObjectPath": "Assets/Script/SO/Node/Row3/ObedienceTrainer.asset"
+          },
+          "requirement": []
+        },
+        {
+          "$id": "28",
+          "rowIndex": 2,
+          "currLevel": 0,
+          "so": {
+            "__scriptableObjectPath": "Assets/Script/SO/Node/Row3/SwiftnessTrainer.asset"
+          },
+          "requirement": [
+            {
+              "$id": "29",
+              "Value": {
+                "$id": "30",
+                "$type": "NeedToUnlockSkillsSO, Assembly-CSharp",
+                "nodeIndices": [
+                  {
+                    "$id": "31",
+                    "rowIndex": 1,
+                    "nodeIndex": 11
+                  }
+                ],
+                "name": "NeedToUnlockSkillWetHooves_SwiftnessTrainer",
+                "hideFlags": 0
+              },
+              "UnderlyingValue": {
+                "$ref": "30"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "name": "Skill 1",
+  "hideFlags": 0
+}

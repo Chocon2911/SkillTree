@@ -9,8 +9,8 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1657492a89469d84195829af32b74a5b, type: 3}
-  m_Name: EnoughUnlockedSkill_Row2
+  m_Script: {fileID: 11500000, guid: 94f245e27a07e6d49aa116424b67fca9, type: 3}
+  m_Name: Condition2
   m_EditorClassIdentifier: 
-  requiredAmount: 2
-  rowIndex: 0
+  requiredPoints: 15
+  checkedRowIndex: 1

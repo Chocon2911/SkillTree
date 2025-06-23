@@ -1187,6 +1187,7 @@ MonoBehaviour:
   nodeIndex:
     rowIndex: 0
     nodeIndex: 0
+  background: {fileID: 1630345605}
   nodeName: {fileID: 1754585822}
   levelUpBtn: {fileID: 810429640}
   levelTxt: {fileID: 1258837767}
@@ -1447,7 +1448,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 228841ff4a0212547b1d200989fba788, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  so: {fileID: 11400000, guid: 1252028719470e04d944d4e7f5550f77, type: 2}
+  so: {fileID: 11400000, guid: da8fdd1008165c946ae44d9c5f79a5bd, type: 2}
   content: {fileID: 695015944}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:

@@ -1,7 +1,6 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
-using Microsoft.Unity.VisualStudio.Editor;
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
@@ -12,6 +11,7 @@ public class NodeUI : HuyMonoBehaviour
     [NonSerialized] private TreeSO treeSO;
     [NonSerialized] private Node node;
     [SerializeField] private NodeIndex nodeIndex;
+    [SerializeField] private Image background;
     [SerializeField] private TextMeshProUGUI nodeName;
     [SerializeField] private Button levelUpBtn;
     [SerializeField] private TextMeshProUGUI levelTxt;
@@ -24,6 +24,7 @@ public class NodeUI : HuyMonoBehaviour
     {
         base.LoadComponents();
         this.LoadComponent(ref this.nodeName, transform.Find("NameTxt"), "LoadNodeName()");
+        this.LoadComponent(ref this.background, transform.Find("Background"), "LoadBackground()");
         this.LoadComponent(ref this.levelUpBtn, transform.Find("LevelUpBtn"), "LoadLevelUpBtn()");
         this.LoadComponent(ref this.levelTxt, transform.Find("LevelTxt"), "LoadLevelBtn()");
     }
@@ -50,7 +51,8 @@ public class NodeUI : HuyMonoBehaviour
     
     private void OnLevelUpBtnClick()
     {
-        this.node.LevelUp(this.treeSO.Rows);
+        if (this.node.LevelUp(this.treeSO.Rows)) this.background.color = Color.green;
+        else this.background.color = Color.red;
         this.levelTxt.text = this.node.currLevel + "/" + this.node.so.MaxLevel;
     }
 }
