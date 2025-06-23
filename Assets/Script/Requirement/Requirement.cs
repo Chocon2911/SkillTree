@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public interface Condition
+public interface Requirement
 {
-    public bool IsGood();
+    bool IsGood(List<Row> rows);
 }

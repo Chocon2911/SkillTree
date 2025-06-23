@@ -1,0 +1,65 @@
+﻿using UnityEngine;
+using System.IO;
+using Newtonsoft.Json;
+using System;
+using System.Collections;
+using System.Collections.Generic;
+using System.Reflection;
+using Newtonsoft.Json.Serialization;
+
+public static class JsonHandler
+{
+    private class ReuseContractResolver : DefaultContractResolver
+    {
+        protected override JsonProperty CreateProperty(MemberInfo member, MemberSerialization memberSerialization)
+        {
+            JsonProperty prop = base.CreateProperty(member, memberSerialization);
+
+            if (typeof(ScriptableObject).IsAssignableFrom(prop.PropertyType))
+                prop.ObjectCreationHandling = ObjectCreationHandling.Reuse;
+
+            if (typeof(IList).IsAssignableFrom(prop.PropertyType))
+                prop.ObjectCreationHandling = ObjectCreationHandling.Replace;
+
+            return prop;
+        }
+    }
+
+    private static readonly JsonSerializerSettings jsonSettings = new JsonSerializerSettings
+    {
+        Formatting = Formatting.Indented,
+        TypeNameHandling = TypeNameHandling.Auto,
+        PreserveReferencesHandling = PreserveReferencesHandling.Objects,
+        ReferenceLoopHandling = ReferenceLoopHandling.Ignore,
+        ContractResolver = new ReuseContractResolver()
+    };
+
+    public static void SaveToJson(ScriptableObject so, string fileName, string folderName = "ExportedData")
+    {
+        if (so == null) return;
+
+        string json = JsonConvert.SerializeObject(so, jsonSettings);
+        string path = Path.Combine(Application.dataPath, folderName);
+        if (!Directory.Exists(path))
+            Directory.CreateDirectory(path);
+
+        File.WriteAllText(Path.Combine(path, fileName + ".json"), json);
+        Debug.Log($"✅ Saved JSON to: {Path.Combine(path, fileName + ".json")}");
+    }
+
+    public static void LoadFromJson<T>(T targetObject, string fileName, string folderName = "ExportedData") where T : ScriptableObject
+    {
+        if (targetObject == null) return;
+
+        string fullPath = Path.Combine(Application.dataPath, folderName, fileName + ".json");
+        if (!File.Exists(fullPath))
+        {
+            Debug.LogWarning($"❌ File not found: {fullPath}");
+            return;
+        }
+
+        string json = File.ReadAllText(fullPath);
+        JsonConvert.PopulateObject(json, targetObject, jsonSettings);
+        Debug.Log($"✅ Loaded JSON into object: {fullPath}");
+    }
+}

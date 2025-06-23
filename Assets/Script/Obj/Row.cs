@@ -7,7 +7,7 @@ using UnityEngine;
 public class Row
 {
     //==========================================Variable==========================================
-    public ThresholdType threshold;
+    public List<InterfaceReference<Requirement>> requirements;
     public List<Node> nodes;
 
     public void LoadComponent(int index)
@@ -30,45 +30,36 @@ public class Row
         return -1;
     }
 
-    public bool CanChildNodeLevelUp(List<Row> rows)
+    public bool CanLevelUp(List<Row> rows)
     {
-        switch (this.threshold)
+        foreach (InterfaceReference<Requirement> requirement in this.requirements)
         {
-            case ThresholdType.NONE:
-                return true;
-            case ThresholdType.TWO_OVER_THREE:
-                return this.IsCondition1Good();
-            case ThresholdType.ABOVE_15_POINTS:
-                return this.IsCondition2Good();
-            default:
-                return false;
+            if (!requirement.Value.IsGood(rows)) return false;
         }
+
+        return true;
     }
 
-    //=========================================Condition==========================================
-    public bool IsCondition1Good()
+    public int GetTotalPoints()
+    {
+        int totalPoints = 0;
+        foreach (Node node in this.nodes)
+        {
+            totalPoints += node.currLevel;
+        }
+
+        return totalPoints;
+    }
+
+    public int GetTotalUnlockedSkillAmount()
     {
         int unlockedSkillAmount = 0;
-        int requiredAmount = 2 * this.nodes.Count / 3;
         foreach (Node node in this.nodes)
         {
             if (node.currLevel < 1) continue;
             unlockedSkillAmount++;
         }
 
-        return unlockedSkillAmount >= requiredAmount ? true : false;
-    }
-
-    public bool IsCondition2Good()
-    {
-        int totalUnlockedPoints = 0;
-        int requiredPoints = 15;
-
-        foreach (Node node in this.nodes)
-        {
-            totalUnlockedPoints += node.currLevel;
-        }
-
-        return totalUnlockedPoints >= requiredPoints ? true : false;
+        return unlockedSkillAmount;
     }
 }

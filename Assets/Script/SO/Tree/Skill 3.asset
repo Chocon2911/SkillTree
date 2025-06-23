@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5907d2707f232074fb18716af14a8c1b, type: 3}
-  m_Name: Skill 2
+  m_Name: Skill 3
   m_EditorClassIdentifier: 
   dataPath: Data
   Rows:
@@ -28,8 +28,7 @@ MonoBehaviour:
       currLevel: 0
       so: {fileID: 11400000, guid: 4587ed96948aa7a4e8513b7705f6d100, type: 2}
       requirement: []
-  - requirements:
-    - underlyingValue: {fileID: 11400000, guid: 9625ca3c620d607468a610112c39b836, type: 2}
+  - requirements: []
     nodes:
     - rowIndex: 1
       currLevel: 0
@@ -79,8 +78,7 @@ MonoBehaviour:
       currLevel: 0
       so: {fileID: 11400000, guid: 1bcd6d111d44bee4589905dadc3a165f, type: 2}
       requirement: []
-  - requirements:
-    - underlyingValue: {fileID: 11400000, guid: 9a52fe733f5a61f41bc7bee73b2875c8, type: 2}
+  - requirements: []
     nodes:
     - rowIndex: 2
       currLevel: 0
