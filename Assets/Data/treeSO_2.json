@@ -1,0 +1,159 @@
+g{
+    "Rows": [
+        {
+            "threshold": 1,
+            "nodes": [
+                {
+                    "rowIndex": 1,
+                    "currLevel": 1,
+                    "so": {
+                        "instanceID": 25312
+                    }
+                },
+                {
+                    "rowIndex": 1,
+                    "currLevel": 1,
+                    "so": {
+                        "instanceID": 25358
+                    }
+                },
+                {
+                    "rowIndex": 1,
+                    "currLevel": 0,
+                    "so": {
+                        "instanceID": 25324
+                    }
+                }
+            ]
+        },
+        {
+            "threshold": 2,
+            "nodes": [
+                {
+                    "rowIndex": 2,
+                    "currLevel": 0,
+                    "so": {
+                        "instanceID": 25308
+                    }
+                },
+                {
+                    "rowIndex": 2,
+                    "currLevel": 0,
+                    "so": {
+                        "instanceID": 25340
+                    }
+                },
+                {
+                    "rowIndex": 2,
+                    "currLevel": 3,
+                    "so": {
+                        "instanceID": 25348
+                    }
+                },
+                {
+                    "rowIndex": 2,
+                    "currLevel": 3,
+                    "so": {
+                        "instanceID": 25326
+                    }
+                },
+                {
+                    "rowIndex": 2,
+                    "currLevel": 3,
+                    "so": {
+                        "instanceID": 25334
+                    }
+                },
+                {
+                    "rowIndex": 2,
+                    "currLevel": 3,
+                    "so": {
+                        "instanceID": 25328
+                    }
+                },
+                {
+                    "rowIndex": 2,
+                    "currLevel": 3,
+                    "so": {
+                        "instanceID": 25338
+                    }
+                },
+                {
+                    "rowIndex": 2,
+                    "currLevel": 0,
+                    "so": {
+                        "instanceID": 25316
+                    }
+                },
+                {
+                    "rowIndex": 2,
+                    "currLevel": 0,
+                    "so": {
+                        "instanceID": 25314
+                    }
+                },
+                {
+                    "rowIndex": 2,
+                    "currLevel": 0,
+                    "so": {
+                        "instanceID": 25322
+                    }
+                },
+                {
+                    "rowIndex": 2,
+                    "currLevel": 0,
+                    "so": {
+                        "instanceID": 25346
+                    }
+                },
+                {
+                    "rowIndex": 2,
+                    "currLevel": 0,
+                    "so": {
+                        "instanceID": 25310
+                    }
+                }
+            ]
+        },
+        {
+            "threshold": 1,
+            "nodes": [
+                {
+                    "rowIndex": 3,
+                    "currLevel": 1,
+                    "so": {
+                        "instanceID": 25352
+                    }
+                },
+                {
+                    "rowIndex": 3,
+                    "currLevel": 0,
+                    "so": {
+                        "instanceID": 25320
+                    }
+                },
+                {
+                    "rowIndex": 3,
+                    "currLevel": 0,
+                    "so": {
+                        "instanceID": 25318
+                    }
+                },
+                {
+                    "rowIndex": 3,
+                    "currLevel": 0,
+                    "so": {
+                        "instanceID": 25344
+                    }
+                },
+                {
+                    "rowIndex": 3,
+                    "currLevel": 0,
+                    "so": {
+                        "instanceID": 25342
+                    }
+                }
+            ]
+        }
+    ]
+}
